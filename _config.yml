@@ -1,13 +1,16 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-workshop_repo   : "http://github.com/swcarpentry/workshop-template"
-workshop_site   : "http://swcarpentry.github.io/workshop-template"
+username        : "alexsavio"
+swc_name        : "2016-05-TBD-lundunie"
+
+workshop_repo   : "http://github.com/%{username}/%{swc_name}"
+workshop_site   : "http://%{username}.github.io/%{swc_name}"
 #--------------------------------------------------------------------------------
 # Standard Software Carpentry settings - should not need to be modified.
 #--------------------------------------------------------------------------------
 swc_blog        : "http://software-carpentry.org/feed.xml"
-swc_contact     : "admin@software-carpentry.org"
+swc_contact     : "alexsavio@gmail.com"
 swc_files       : "http://files.software-carpentry.org"
 swc_github      : "http://github.com/swcarpentry"
 swc_githubio    : "http://swcarpentry.github.io/"
