@@ -10,7 +10,7 @@ humandate: "May 25-27, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-05-25      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2016-05-27        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexandre Savio", "Andres Diaz-Gil?"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Alexandre Manhães Savio", "Andrés Díaz-Gil?"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Oier Etxaniz"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "johan.martensson@psy.lu.se"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad: 'false'        # optional (insert the URL for your Etherpad if you're using one)
@@ -25,25 +25,6 @@ eventbrite: 'false'     # optional (insert the alphanumeric key for Eventbrite r
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
 
-<!--
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
-<h2 id="general">General Information</h2>
 
 <!--
   INTRODUCTION
@@ -129,56 +110,51 @@ eventbrite: 'false'     # optional (insert the alphanumeric key for Eventbrite r
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
-</p>
+  for more information, or
 
+<div style="display: block;" class="classictemplate template">
+<style type="text/css">
+  #groupsio_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+  #groupsio_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+  #groupsio_embed_signup .email {display:block; padding:8px 0; margin:0 4% 10px 0; text-indent:5px; width:58%; min-width:130px;}
+  #groupsio_embed_signup {
+    background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+  }
+  #groupsio_embed_signup .button {
 
-<p id="register">
-    <strong>Register</strong>:
-    <div style="display: block;" class="classictemplate template">
-    <style type="text/css">
-      #groupsio_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
-      #groupsio_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
-      #groupsio_embed_signup .email {display:block; padding:8px 0; margin:0 4% 10px 0; text-indent:5px; width:58%; min-width:130px;}
-      #groupsio_embed_signup {
-        background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
-      }
-      #groupsio_embed_signup .button {
+      width:25%; margin:0 0 10px 0; min-width:90px;
+      background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+      background-repeat: repeat-x;
+      border-color: #245580;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+      padding: 5px 10px;
+      font-size: 12px;
+      line-height: 1.5;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #337ab7;
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+</style>
+<div id="groupsio_embed_signup">
+<form action="https://groups.io/g/lund-SC-workshop/signup?u=2154170982873630030" method="post" id="groupsio-embedded-subscribe-form" name="groupsio-embedded-subscribe-form" target="_blank">
+    <div id="groupsio_embed_signup_scroll">
+      <label for="email" id="templateformtitle">Subscribe to our group</label>
+      <input value="" name="email" class="email" id="email" placeholder="email address" required="" type="email">
 
-          width:25%; margin:0 0 10px 0; min-width:90px;
-          background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
-          background-repeat: repeat-x;
-          border-color: #245580;
-          text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
-          padding: 5px 10px;
-          font-size: 12px;
-          line-height: 1.5;
-          border-radius: 3px;
-          color: #fff;
-          background-color: #337ab7;
-          display: inline-block;
-          margin-bottom: 0;
-          font-weight: 400;
-          text-align: center;
-          white-space: nowrap;
-          vertical-align: middle;
-        }
-    </style>
-    <div id="groupsio_embed_signup">
-    <form action="https://groups.io/g/lund-SC-workshop/signup?u=2154170982873630030" method="post" id="groupsio-embedded-subscribe-form" name="groupsio-embedded-subscribe-form" target="_blank">
-        <div id="groupsio_embed_signup_scroll">
-          <label for="email" id="templateformtitle">Subscribe to our group</label>
-          <input value="" name="email" class="email" id="email" placeholder="email address" required="" type="email">
-
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input name="b_2154170982873630030" tabindex="-1" value="" type="text"></div>
-        <div id="templatearchives"></div>
-        <input value="Subscribe" name="subscribe" id="groupsio-embedded-subscribe" class="button" type="submit">
-      </div>
-    </form>
-    </div>
-    </div>
-    </p>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input name="b_2154170982873630030" tabindex="-1" value="" type="text"></div>
+    <div id="templatearchives"></div>
+    <input value="Subscribe" name="subscribe" id="groupsio-embedded-subscribe" class="button" type="submit">
+  </div>
+</form>
+</div>
+</div>
 <hr/>
 
 <!--
