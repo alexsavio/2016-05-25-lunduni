@@ -1,11 +1,11 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-username        : "alexsavio"
-swc_name        : "2016-05-TBD-lundunie"
+username        : alexsavio
+swc_name        : 2016-05-25-lunduni
 
-workshop_repo   : "http://github.com/%{username}/%{swc_name}"
-workshop_site   : "http://%{username}.github.io/%{swc_name}"
+workshop_repo   : http://github.com/%{username}/%{swc_name}
+workshop_site   : http://%{username}.github.io/%{swc_name}
 #--------------------------------------------------------------------------------
 # Standard Software Carpentry settings - should not need to be modified.
 #--------------------------------------------------------------------------------
