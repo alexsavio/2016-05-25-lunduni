@@ -691,17 +691,38 @@ This workshop is possible thanks to the contributions of
     within a single workflow.
   </p>
 
-    <p>
-      If you use Python 2.7 you can install it using <pre>pip install nipype</pre>
-      If you prefer Python 3.4 or 3.5 you will have to install it from the
-      repository, running: <pre>pip install git+https://github.com/nipy/nipype</pre>
-    </p>
+  <p>
+    If you use Python 2.7 you can install it using <pre>pip install nipype</pre>
+    If you prefer Python 3.4 or 3.5 you will have to install it from the
+    repository, running: <pre>pip install git+https://github.com/nipy/nipype</pre>
+  </p>
 
-    <p>
-      There is other <a href="http://nipy.org/">nipy</a> tools that you
-      may find interesting and you can install using the same scheme as in the
-      previous paragraph.
-    </p>
+  <p>
+    There is other <a href="http://nipy.org/">nipy</a> tools that you
+    may find interesting and you can install using the same scheme as in the
+    previous paragraph.
+  </p>
+
+  <p>
+    There is a comprehensive set of instructions to install neuroimaging tools
+    <a href='https://github.com/stowler/brainwhere/blob/master/docs/setupNeuroimagingEnvironment.md#fsl-melview'>here</a>.
+  </p>
+
+  <p>
+    Send us an email if you have any question.
+  </p>
+
+  <p>
+    During the course I plan to use the COBRE dataset. One good way of downloading it
+    is using <a href='http://nilearn.github.io/'>nilearn</a>
+    <code>fetch_cobre</code> function:
+
+    <code>
+    from nilearn.datasets import fetch_cobre
+    data = fetch_cobre(n_subject=20)
+    </code>
+  </p>
+
 
   <div class="row">
     <div class="col-md-4">
@@ -709,7 +730,8 @@ This workshop is possible thanks to the contributions of
       <ol>
         <li>The neuroimaging tools we will use have bad support for Windows.</li>
         <li>You could install nipype and other nipy tools in Windows using <i>pip</i>.</li>
-        <li>The main concern is that some of the exercises where we call FSL, for instance, you won't be able to run it.</li>
+        <li>The main concern is that some of the exercises where we call FSL,
+            for instance, you won't be able to run it.</li>
       </ol>
     </div>
     <div class="col-md-4">
