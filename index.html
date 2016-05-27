@@ -698,36 +698,47 @@ pip install scipy
 
   <p>
     <a href="http://www.mit.edu/~satra/nipype-nightly/index.html">Nipype</a>
-    an open-source, community-developed initiative under the umbrella of NiPy,
-    is a Python project that provides a uniform interface to existing
-    neuroimaging software and facilitates interaction between these packages
+    an open-source, community-developed Python initiative under the umbrella of NiPy.
+    It provides a uniform interface to existing neuroimaging software and
+    facilitates interaction between these packages
     within a single workflow.
   </p>
 
   <p>
-    If you use Python 2.7 you can install it using <pre>pip install nipype</pre>
-    If you prefer Python 3.4 or 3.5 you will have to install it from the
-    repository, running: <pre>pip install git+https://github.com/nipy/nipype</pre>
-  </p>
+    To run the tutorial you will probably need FSL and SPM correctly installed.
+    You must follow each tools' installation procedure.
+    To check if FSL is correctly installed you can run <pre>fsl</pre> in a terminal
+    and a window must appear.
+    In order to nipype find SPM you must be able to launch Matlab
+    running <pre>matlab</pre> from a terminal (tip: include its bin folder in your $PATH)
+    and SPM must be in the Path of Matlab.
 
-  <p>
-    There is other <a href="http://nipy.org/">nipy</a> tools that you
-    may find interesting and you can install using the same scheme as in the
-    previous paragraph.
-  </p>
-
-  <p>
     There is a comprehensive set of instructions to install neuroimaging tools
     <a href='https://github.com/stowler/brainwhere/blob/master/docs/setupNeuroimagingEnvironment.md#fsl-melview'>here</a>.
   </p>
 
   <p>
-    Send us an email if you have any question.
+    In order to install nipype:
+
+    If you use Python 2.7 you can install it using <pre>pip install nipype</pre>.
+
+    If you prefer Python 3.4 or 3.5 you will have to install a newer version from the
+    repository, running: <pre>pip install git+https://github.com/nipy/nipype</pre>
+  </p>
+
+  <p>
+    There are other <a href="http://nipy.org/">nipy</a> tools that you
+    may find interesting and you can install using the same scheme as in the
+    previous paragraph.
+  </p>
+
+  <p>
+    Please send us an email if you have any question or issue with the setup.
   </p>
 
   <p>
     To accelerate the beginning of the course, please have the NiPype repository cloned in
-    your computer. To do this, go to the folder where you want to have the source code and run:
+    your computer. To do this, go to the folder where you want to have the source code folder and run:
     <pre>git clone https://github.com/nipy/nipype.git</pre>
 
     I also need you to download this
@@ -764,7 +775,7 @@ pip install scipy
     <div class="col-md-4">
       <h4 id="nipype-macosx">Mac OS X</h4>
       <ol>
-        <li>Follow the pip instructions detailed above to install nipype.</li>
+        <li>Follow the instructions detailed above to install nipype and other tools.</li>
         <li>Install <a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/MacOsX">FSL</a>.</li>
       </ol>
     </div>
@@ -772,7 +783,7 @@ pip install scipy
       <h4 id="nipype-linux">Linux</h4>
       </p>
       <ol>
-        <li>Follow the pip instructions detailed above to install nipype.</li>
+        <li>Follow the instructions detailed above to install nipype and other tools.</li>
         <li>Install <a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Linux">FSL</a>.</li>
         <li>If you are using Ubuntu or Debian I recommend using <a href="http://neuro.debian.net/">NeuroDebian</a>.</li>
       </ol>
