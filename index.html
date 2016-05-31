@@ -94,8 +94,9 @@ registrationform: http://goo.gl/forms/IP1Ps887U9
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with
-  a few specific software packages installed (listed
+  <strong>Requirements:</strong> Participants must bring a laptop with a
+  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
+  on. They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
@@ -116,73 +117,8 @@ registrationform: http://goo.gl/forms/IP1Ps887U9
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information, or
-
-<div style="display: block;" class="classictemplate template">
-<style type="text/css">
-  #groupsio_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
-  #groupsio_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
-  #groupsio_embed_signup .email {display:block; padding:8px 0; margin:0 4% 10px 0; text-indent:5px; width:58%; min-width:130px;}
-  #groupsio_embed_signup {
-    background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
-  }
-  #groupsio_embed_signup .button {
-
-      width:25%; margin:0 0 10px 0; min-width:90px;
-      background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
-      background-repeat: repeat-x;
-      border-color: #245580;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
-      padding: 5px 10px;
-      font-size: 12px;
-      line-height: 1.5;
-      border-radius: 3px;
-      color: #fff;
-      background-color: #337ab7;
-      display: inline-block;
-      margin-bottom: 0;
-      font-weight: 400;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: middle;
-    }
-</style>
-<div id="groupsio_embed_signup">
-<form action="https://groups.io/g/lund-SC-workshop/signup?u=2154170982873630030" method="post" id="groupsio-embedded-subscribe-form" name="groupsio-embedded-subscribe-form" target="_blank">
-    <div id="groupsio_embed_signup_scroll">
-      <label for="email" id="templateformtitle">Subscribe to our group</label>
-      <input value="" name="email" class="email" id="email" placeholder="email address" required="" type="email">
-
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input name="b_2154170982873630030" tabindex="-1" value="" type="text"></div>
-    <div id="templatearchives"></div>
-    <input value="Subscribe" name="subscribe" id="groupsio-embedded-subscribe" class="button" type="submit">
-  </div>
-</form>
-</div>
-</div>
-<hr/>
-
-<!--
-  SPONSORS
-  Full section for sponsors' logos. Could be a "General Information"
-  subsection
--->
-
-<h2>Sponsors</h2>
-<p>
-This workshop is possible thanks to the contributions of
+  for more information.
 </p>
-
-<div class="sponsor-logos">
-  <a href="https://www.python.org/psf" title="Python Software Foundation">
-    <img alt="Python Software Foundation logo" src="img/PSF-logo.png" height='50px'/>
-  </a>
-  <a href="https://www.pyss.org/" title="Asociación Python San Sebastián">
-    <img alt="Python San Sebastián logo" src="img/acpyss.png" height='50px'/>
-  </a>
-</div>
-
 
 <hr/>
 
@@ -424,6 +360,7 @@ This workshop is possible thanks to the contributions of
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <ol>
         <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
         <li>Run the installer and follow the steps bellow:
@@ -467,6 +404,18 @@ This workshop is possible thanks to the contributions of
             <li>Click on "Finish".</li>
           </ol>
         </li>
+        <li>
+          If your "HOME" environment variable is not set (or you don't know what this is):
+          <ol>
+            <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
+            <li>
+              Type the following line into the command prompt window exactly as shown:
+              <p><code>setx HOME "%USERPROFILE%"</code></p>
+            </li>
+            <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
+            <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
+          </ol>
+        </li>
       </ol>
       <p>This will provide you with both Git and Bash in the Git Bash program.</p>
     </div>
@@ -476,7 +425,10 @@ This workshop is possible thanks to the contributions of
         The default shell in all versions of Mac OS X is Bash, so no
         need to install anything.  You access Bash from the Terminal
         (found in
-        <code>/Applications/Utilities</code>). You may want to keep
+        <code>/Applications/Utilities</code>).
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open the Terminal.
+        You may want to keep
         Terminal in your dock for this workshop.
       </p>
     </div>
@@ -495,7 +447,6 @@ This workshop is possible thanks to the contributions of
 <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
   <h3>Git</h3>
-
   <p>
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
@@ -504,6 +455,15 @@ This workshop is possible thanks to the contributions of
     <a href="https://help.github.com/articles/supported-browsers/">supported</a>
     web browser (current versions of Chrome, Firefox or Safari,
     or Internet Explorer version 9 or above).
+  </p>
+  <p>
+    You will need an account at <a href="https://github.com/">github.com</a>
+    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
+    you to create a GitHub account if you don't have one already.
+    Please consider what personal information you'd like to reveal. For
+    example, you may want to review these
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
+    for keeping your email address private</a> provided at GitHub.
   </p>
 
   <div class="row">
@@ -516,6 +476,7 @@ This workshop is possible thanks to the contributions of
     </div>
     <div class="col-md-4">
       <h4 id="git-macosx">Mac OS X</h4>
+      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
       <p>
         <strong>For OS X 10.9 and higher</strong>, install Git for Mac
         by downloading and running the most recent "mavericks" installer from
@@ -555,6 +516,7 @@ This workshop is possible thanks to the contributions of
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
         To install it,
@@ -575,6 +537,8 @@ This workshop is possible thanks to the contributions of
       <h4 id="editor-macosx">Mac OS X</h4>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open nano.
         It should be pre-installed.
       </p>
       <p>
@@ -631,20 +595,10 @@ This workshop is possible thanks to the contributions of
       and below, are not).
     </p>
 
-    <p>
-        We will use the following libraries and applications:
-        Jupyter, Numpy, Scipy and Matplotlib.
-        These are included in the Anaconda package. You can also
-        install them with pip or conda by running the following commands:
-        <pre>pip install jupyter numpy matplotlib
-pip install scipy
-</pre>
-    </p>
-
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
         <li>Download the Python 3 installer for Windows.</li>
@@ -653,6 +607,7 @@ pip install scipy
     </div>
     <div class="col-md-4">
       <h4 id="python-macosx">Mac OS X</h4>
+      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
         <li>Download the Python 3 installer for OS X.</li>
@@ -661,7 +616,6 @@ pip install scipy
     </div>
     <div class="col-md-4">
       <h4 id="python-linux">Linux</h4>
-      </p>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
         <li>Download the Python 3 installer for Linux.</li>
@@ -673,7 +627,7 @@ pip install scipy
           Open a terminal window.
         </li>
         <li>
-          Type <pre>bash Anaconda-</pre> and then press
+          Type <pre>bash Anaconda3-</pre> and then press
           tab. The name of the file you just downloaded should
           appear.
         </li>
@@ -822,6 +776,7 @@ pip install scipy
   <div class="row">
     <div class="col-md-4">
       <h4 id="r-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
       <p>
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
@@ -832,6 +787,7 @@ pip install scipy
     </div>
     <div class="col-md-4">
       <h4 id="r-macosx">Mac OS X</h4>
+      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
       <p>
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
